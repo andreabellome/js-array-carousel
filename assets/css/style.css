@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.carosello{
+    height: 50%;
+    width: 50%;
+    display: flex;
+}
+
+.items{
+    width: 70%;
+}
+
+.thumbs{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+
+}
+
+.thumbs img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.thumb{
+    width: 100%;
+    height: calc(100% / 5);
+}
+
+.item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
