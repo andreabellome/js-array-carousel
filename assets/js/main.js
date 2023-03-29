@@ -1,4 +1,3 @@
-
 /* array images */
 let images = [
     './assets/img/01.webp',
