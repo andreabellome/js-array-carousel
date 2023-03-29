@@ -31,9 +31,42 @@
     justify-content: space-between;
     overflow: hidden;
 
+    position: relative;
+
+}
+
+.prev{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.next{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.prev i,
+.next i{
+    background-color: white;
+    border-radius: 100%;
+    padding: 10px;
+    cursor: pointer;
 }
 
 .thumbs img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.img-def{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -45,9 +78,49 @@
     height: calc(100% / 5);
 }
 
+.thumbs .active img{
+    filter: brightness(1);
+}
+
 .item img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
+
+/* .items .item{
+    opacity: 0;
+    display: none;
+}
+
+.items .item .active{
+    opacity: 1;
+    display: block;
+} */
+
+.activeJS{
+    filter: brightness(1);
+    opacity: 1;
+    display: block;
+}
+
+.nonactiveJS{
+    opacity: 0;
+    display: none;
+}
+
+.bright-deg-img-th{
+    filter: brightness(0.5);
+}
+
+.bright-nodeg-img-th{
+    filter: brightness(1);
+}
+
+.thumb .activeTHJS{
+    filter: brightness(1);
+}
+
+
+
